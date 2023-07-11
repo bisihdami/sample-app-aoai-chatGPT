@@ -204,7 +204,7 @@
         }
     },
     "variables": {
-        "WebAppImageName": "DOCKER|fruoccopublic.azurecr.io/sample-app-aoai-chatgpt:latest"
+        "WebAppImageName": "DOCKER|cropenai001.azurecr.io/sample-app-aoai-chatgpt:latest"
     },
     "resources": [
         {
