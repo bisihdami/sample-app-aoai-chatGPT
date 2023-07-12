@@ -33,13 +33,14 @@ const Chat = () => {
     const [showAuthMessage, setShowAuthMessage] = useState<boolean>(true);
     
     const getUserInfoList = async () => {
-        const userInfoList = await getUserInfo();
+        setShowAuthMessage(false);
+        /*const userInfoList = await getUserInfo();
         if (userInfoList.length === 0 && window.location.hostname !== "127.0.0.1") {
             setShowAuthMessage(true);
         }
         else {
             setShowAuthMessage(false);
-        }
+        }*/
     }
 
     const makeApiRequest = async (question: string) => {
@@ -153,7 +154,7 @@ const Chat = () => {
             {showAuthMessage ? (
                 <Stack className={styles.chatEmptyState}>
                     <ShieldLockRegular className={styles.chatIcon} style={{color: 'darkorange', height: "200px", width: "200px"}}/>
-                    <h1 className={styles.chatEmptyStateTitle}>xxxAuthentication Not Configured</h1>
+                    <h1 className={styles.chatEmptyStateTitle}>Authentication Not Configured</h1>
                     <h2 className={styles.chatEmptyStateSubtitle}>
                         This app does not have authentication configured. Please add an identity provider by finding your app in the 
                         <a href="https://portal.azure.com/" target="_blank"> Azure Portal </a>
