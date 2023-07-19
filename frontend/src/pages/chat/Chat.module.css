@@ -65,6 +65,7 @@
 .chatIcon {
     height: 20px;
     width: 120px;
+    visibility: hidden;
 }
 
 .chatMessageStream {
