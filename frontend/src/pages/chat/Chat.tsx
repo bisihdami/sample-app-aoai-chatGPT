@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm'
 import rehypeRaw from "rehype-raw"; 
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/Azure.svg";
+import BinnoBotLogo from "../../assets/bisih_logo.png";
 
 import {
     ChatMessage,
@@ -170,7 +170,7 @@ const Chat = () => {
                         {!lastQuestionRef.current ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={Azure}
+                                    src={BinnoBotLogo}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />

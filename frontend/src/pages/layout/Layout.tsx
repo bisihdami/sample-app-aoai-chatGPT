@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
-import Azure from "../../assets/Azure.svg";
+import BinnoBotLogo from "../../assets/bisih_logo.png";
 import { CopyRegular, ShareRegular } from "@fluentui/react-icons";
 import { Dialog, Stack, TextField } from "@fluentui/react";
 import { useEffect, useState } from "react";
@@ -37,7 +37,7 @@ const Layout = () => {
                 <div className={styles.headerContainer}>
                     <Stack horizontal verticalAlign="center">
                         <img
-                            src={Azure}
+                            src={BinnoBotLogo}
                             className={styles.headerIcon}
                             aria-hidden="true"
                         />
